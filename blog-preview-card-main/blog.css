@@ -1,0 +1,73 @@
+/* ----- CSS Reset (minimal) ----- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* ----- Variables (match style-guide.md) ----- */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+
+    --radius-card: 20px;
+    --radius-img: 12px;
+}
+
+/* ----- Page layout ----- */
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: var(--slate-300);
+    color: var(--slate-900);
+}
+
+.page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+/* ----- Card ----- */
+.card {
+    width: 100%;
+    max-width: 320px;
+    background: var(--white);
+    border-radius: var(--radius-card);
+    padding: 14px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* ----- Image ----- */
+.card__img {
+    width: 100%;
+    display: block;
+    border-radius: var(--radius-img);
+    margin-bottom: 18px;
+}
+
+/* ----- Content ----- */
+.card__content {
+    padding: 0 12px 16px;
+}
+
+.card__title {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: -0.2px;
+}
+
+.card__text {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.4;
+    color: var(--slate-500);
+}
