@@ -71,3 +71,39 @@ body {
     line-height: 1.4;
     color: var(--slate-500);
 }
+
+.tag{
+    display:inline-block;
+    background:#f97316;
+    color:#fff;
+    font-weight:700;
+    font-size:12px;
+    padding:.35rem .6rem;
+    border-radius:8px;
+    margin:0 0 .6rem;
+}
+
+.date{
+    margin:0 0 .75rem;
+    font-size:12px;
+    color:var(--slate-900);
+}
+
+.author{
+    margin-top:1rem;
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    justify-content:flex-start;
+}
+
+.author__img{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+}
+
+.author__name{
+    font-weight:700;
+    font-size:14px;
+}
