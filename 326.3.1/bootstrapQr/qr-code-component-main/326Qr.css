@@ -1,0 +1,41 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+  --radius-card: 20px;
+  --radius-img: 12px;
+}
+
+/* Background + base text colors (Bootstrap doesn’t include these exact tokens) */
+.bg-slate-300 { background: var(--slate-300) !important; }
+.text-slate-900 { color: var(--slate-900) !important; }
+
+/* Card sizing + style */
+.qr-card {
+  width: 100%;
+  max-width: 320px;
+  background: var(--white);
+  border-radius: var(--radius-card);
+  padding: 14px; /* keeps the “white border” around the image */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Image rounding */
+.qr-img {
+  border-radius: var(--radius-img);
+  display: block;
+  width: 100%;
+}
+
+/* Typography tweaks */
+.qr-title {
+  letter-spacing: -0.2px;
+  line-height: 1.3;
+}
+
+.qr-text {
+  color: var(--slate-500) !important;
+  font-size: 15px;
+  line-height: 1.4;
+}
